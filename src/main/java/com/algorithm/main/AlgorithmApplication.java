@@ -57,16 +57,12 @@ public class AlgorithmApplication implements AlgorithmApplicationService {
 								skillNumberList.get(j).getSkill() + " killed " + skillNumberList.get(i).getSkill());
 						skillNumberList.get(j).setShoted(true);
 						skillNumberList.remove(skillNumberList.get(i));
-//						i = 0;
-//						j = 1;
 					} else if (skillNumberList.get(i).isShoted() == true
 							&& skillNumberList.get(j).isShoted() == false) {
 						System.out.println(
 								skillNumberList.get(j).getSkill() + " killed " + skillNumberList.get(i).getSkill());
 						skillNumberList.get(j).setShoted(true);
 						skillNumberList.remove(skillNumberList.get(i));
-//						i = 0;
-//						j = 1;
 					} else if (skillNumberList.get(i).isShoted() == false
 							&& skillNumberList.get(j).isShoted() == true) {
 						j++;
